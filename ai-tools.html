@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore AI Tools by Category - Best Free & Premium AI Tools</title>
+    <meta
+      name="description"
+      content="Browse powerful AI tools by category including writing, image generation, video, coding, and more. Find both free and premium tools in one place."
+    />
+    <meta
+      name="keywords"
+      content="AI tools, best AI apps, AI tools by category, AI for writing, image generation, coding AI, free AI tools, productivity AI"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://your-domain.com/ai-tools.html" />
+
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#4F46E5", secondary: "#10B981" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <header class="bg-white shadow-sm">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex items-center justify-between">
+          <h1 class="text-3xl font-bold text-gray-900">AI Tools Directory</h1>
+          <div class="flex items-center space-x-4">
+            <button
+              class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
+            >
+              <div class="w-5 h-5 flex items-center justify-center">
+                <i class="ri-information-line"></i>
+              </div>
+              <span>About</span>
+            </button>
+            <button
+              class="bg-primary text-white px-4 py-2 !rounded-button flex items-center gap-2 hover:bg-primary/90 transition-colors whitespace-nowrap"
+            >
+              <div class="w-5 h-5 flex items-center justify-center">
+                <i class="ri-add-line"></i>
+              </div>
+              <!-- <span>Submit Tool</span> -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <div class="max-w-4xl mx-auto mb-8">
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+          >
+            <div class="w-5 h-5 flex items-center justify-center text-gray-400">
+              <i class="ri-search-line"></i>
+            </div>
+          </div>
+          <input
+            type="search"
+            id="search-input"
+            class="block w-full pl-10 pr-4 py-3 border-none bg-white rounded shadow-sm focus:ring-2 focus:ring-primary/30 focus:outline-none"
+            placeholder="Search AI tools..."
+          />
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="text-lg font-semibold text-gray-700 mb-3">
+          Filter by Category
+        </h2>
+        <div class="flex flex-wrap gap-2" id="category-filters">
+          <button
+            class="category-badge active px-3 py-1 !rounded-button bg-primary text-white"
+            data-category="all"
+            style="--active-color: #4f46e5"
+          >
+            All
+          </button>
+          <button
+            id="filter-new-releases"
+            class="bg-white text-primary border border-primary px-4 py-2 !rounded-button text-sm font-medium hover:bg-gray-50 transition-all"
+          >
+            New Releases
+          </button>
+
+          <button
+            class="category-badge px-3 py-1 !rounded-button bg-gray-100 text-gray-700"
+            data-category="text"
+            style="--active-color: #f43f5e"
+          >
+            Text Generation
+          </button>
+          <button
+            class="category-badge px-3 py-1 !rounded-button bg-gray-100 text-gray-700"
+            data-category="image"
+            style="--active-color: #8b5cf6"
+          >
+            Image Generation
+          </button>
+          <button
+            class="category-badge px-3 py-1 !rounded-button bg-gray-100 text-gray-700"
+            data-category="audio"
+            style="--active-color: #10b981"
+          >
+            Audio Processing
+          </button>
+          <button
+            class="category-badge px-3 py-1 !rounded-button bg-gray-100 text-gray-700"
+            data-category="video"
+            style="--active-color: #f59e0b"
+          >
+            Video Creation
+          </button>
+          <button
+            class="category-badge px-3 py-1 !rounded-button bg-gray-100 text-gray-700"
+            data-category="coding"
+            style="--active-color: #3b82f6"
+          >
+            Coding Assistant
+          </button>
+          <button
+            class="category-badge px-3 py-1 !rounded-button bg-gray-100 text-gray-700"
+            data-category="productivity"
+            style="--active-color: #ec4899"
+          >
+            Productivity
+          </button>
+          <button
+            class="category-badge px-3 py-1 !rounded-button bg-gray-100 text-gray-700"
+            data-category="research"
+            style="--active-color: #14b8a6"
+          >
+            Research
+          </button>
+        </div>
+      </div>
+
+      <div class="mb-4 flex justify-between items-center">
+        <p class="text-gray-600" id="results-count">Showing 24 tools</p>
+        <div class="relative">
+          <select
+            id="sort-select"
+            class="appearance-none bg-white border-none rounded shadow-sm px-4 py-2 pr-8 focus:ring-2 focus:ring-primary/30 focus:outline-none text-gray-700"
+          >
+            <option value="newest">Newest first</option>
+            <option value="popular">Most popular</option>
+            <option value="name">Name (A-Z)</option>
+          </select>
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none"
+          >
+            <div class="w-4 h-4 flex items-center justify-center text-gray-400">
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        id="tools-grid"
+      >
+        <!-- Tool cards will be generated here -->
+      </div>
+
+      <div id="loading" class="flex justify-center my-12 hidden">
+        <div
+          class="w-12 h-12 flex items-center justify-center text-primary animate-spin"
+        >
+          <i class="ri-loader-4-line ri-3x"></i>
+        </div>
+      </div>
+
+      <div id="no-results" class="hidden text-center py-16">
+        <div
+          class="w-16 h-16 mx-auto flex items-center justify-center text-gray-400 mb-4"
+        >
+          <i class="ri-search-line ri-3x"></i>
+        </div>
+        <h3 class="text-xl font-medium text-gray-700 mb-2">No tools found</h3>
+        <p class="text-gray-500">
+          Try adjusting your search or filter criteria
+        </p>
+      </div>
+
+      <div class="flex justify-center mt-8">
+        <button
+          id="load-more"
+          class="bg-white border border-gray-200 text-gray-700 px-6 py-3 !rounded-button hover:bg-gray-50 transition-colors whitespace-nowrap"
+        >
+          Load more tools
+        </button>
+      </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-16">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p class="text-gray-600">
+              © 2025 AI Tools Directory. Updated on May 27, 2025.
+            </p>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-600 hover:text-primary">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-twitter-x-line"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-primary">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-linkedin-line"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-primary">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-github-line"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script id="tools-data">
+      // Sample AI tools data
+      const toolsData = [
+        {
+          id: 1,
+          name: "ChatGPT",
+          description:
+            "Advanced language model that can generate human-like text, answer questions, and assist with various tasks.",
+          category: "text",
+          categoryLabel: "Text Generation",
+          categoryColor: "#F43F5E",
+          url: "https://chat.openai.com",
+          popularity: 98,
+          dateAdded: "2022-11-30",
+        },
+        {
+          id: 2,
+          name: "DALL-E 3",
+          description:
+            "Creates realistic images and art from natural language descriptions with improved quality and accuracy.",
+          category: "image",
+          categoryLabel: "Image Generation",
+          categoryColor: "#8B5CF6",
+          url: "https://openai.com/dall-e-3",
+          popularity: 95,
+          dateAdded: "2023-09-20",
+        },
+        {
+          id: 3,
+          name: "Midjourney",
+          description:
+            "AI art generator that creates stunning images from text prompts with unique artistic styles.",
+          category: "image",
+          categoryLabel: "Image Generation",
+          categoryColor: "#8B5CF6",
+          url: "https://www.midjourney.com",
+          popularity: 94,
+          dateAdded: "2022-07-12",
+        },
+        {
+          id: 4,
+          name: "Claude",
+          description:
+            "Conversational AI assistant designed to be helpful, harmless, and honest in its interactions.",
+          category: "text",
+          categoryLabel: "Text Generation",
+          categoryColor: "#F43F5E",
+          url: "https://claude.ai",
+          popularity: 92,
+          dateAdded: "2023-03-14",
+        },
+        {
+          id: 5,
+          name: "GitHub Copilot",
+          description:
+            "AI pair programmer that suggests code completions based on context in your editor.",
+          category: "coding",
+          categoryLabel: "Coding Assistant",
+          categoryColor: "#3B82F6",
+          url: "https://github.com/features/copilot",
+          popularity: 91,
+          dateAdded: "2021-06-29",
+        },
+        {
+          id: 6,
+          name: "Stable Diffusion",
+          description:
+            "Open-source image generation model that creates detailed images based on text descriptions.",
+          category: "image",
+          categoryLabel: "Image Generation",
+          categoryColor: "#8B5CF6",
+          url: "https://stability.ai",
+          popularity: 90,
+          dateAdded: "2022-08-22",
+        },
+        {
+          id: 7,
+          name: "Whisper",
+          description:
+            "Automatic speech recognition system that can transcribe audio in multiple languages.",
+          category: "audio",
+          categoryLabel: "Audio Processing",
+          categoryColor: "#10B981",
+          url: "https://openai.com/research/whisper",
+          popularity: 88,
+          dateAdded: "2022-09-21",
+        },
+        {
+          id: 8,
+          name: "Notion AI",
+          description:
+            "AI writing assistant integrated into Notion that helps draft, edit, and summarize content.",
+          category: "productivity",
+          categoryLabel: "Productivity",
+          categoryColor: "#EC4899",
+          url: "https://www.notion.so/product/ai",
+          popularity: 86,
+          dateAdded: "2023-02-22",
+        },
+        {
+          id: 9,
+          name: "Runway Gen-2",
+          description:
+            "AI video generation platform that creates videos from text prompts or image inputs.",
+          category: "video",
+          categoryLabel: "Video Creation",
+          categoryColor: "#F59E0B",
+          url: "https://runwayml.com",
+          popularity: 85,
+          dateAdded: "2023-03-20",
+        },
+        {
+          id: 10,
+          name: "Perplexity AI",
+          description:
+            "AI-powered search engine that provides comprehensive answers with cited sources.",
+          category: "research",
+          categoryLabel: "Research",
+          categoryColor: "#14B8A6",
+          url: "https://www.perplexity.ai",
+          popularity: 83,
+          dateAdded: "2022-12-05",
+        },
+        {
+          id: 11,
+          name: "Anthropic Claude 3",
+          description:
+            "Advanced AI assistant with improved reasoning capabilities and reduced hallucination.",
+          category: "text",
+          categoryLabel: "Text Generation",
+          categoryColor: "#F43F5E",
+          url: "https://www.anthropic.com/claude",
+          popularity: 89,
+          dateAdded: "2024-03-04",
+        },
+        {
+          id: 12,
+          name: "Synthesia",
+          description:
+            "AI video generation platform that creates talking head videos from text scripts.",
+          category: "video",
+          categoryLabel: "Video Creation",
+          categoryColor: "#F59E0B",
+          url: "https://www.synthesia.io",
+          popularity: 82,
+          dateAdded: "2021-11-15",
+        },
+        {
+          id: 13,
+          name: "Jasper",
+          description:
+            "AI content platform that helps create marketing copy, blog posts, and other content.",
+          category: "text",
+          categoryLabel: "Text Generation",
+          categoryColor: "#F43F5E",
+          url: "https://www.jasper.ai",
+          popularity: 80,
+          dateAdded: "2021-02-01",
+        },
+        {
+          id: 14,
+          name: "Otter.ai",
+          description:
+            "AI-powered meeting assistant that records, transcribes, and summarizes conversations.",
+          category: "audio",
+          categoryLabel: "Audio Processing",
+          categoryColor: "#10B981",
+          url: "https://otter.ai",
+          popularity: 79,
+          dateAdded: "2020-03-15",
+        },
+        {
+          id: 15,
+          name: "Grammarly",
+          description:
+            "AI writing assistant that checks grammar, spelling, and provides suggestions for clarity.",
+          category: "productivity",
+          categoryLabel: "Productivity",
+          categoryColor: "#EC4899",
+          url: "https://www.grammarly.com",
+          popularity: 87,
+          dateAdded: "2025-05-20",
+        },
+        {
+          id: 16,
+          name: "Elicit",
+          description:
+            "AI research assistant that finds relevant papers and summarizes key findings.",
+          category: "research",
+          categoryLabel: "Research",
+          categoryColor: "#14B8A6",
+          url: "https://elicit.org",
+          popularity: 77,
+          dateAdded: "2021-07-18",
+        },
+        {
+          id: 17,
+          name: "Eleven Labs",
+          description:
+            "AI voice generation platform that creates natural-sounding voices for various applications.",
+          category: "audio",
+          categoryLabel: "Audio Processing",
+          categoryColor: "#10B981",
+          url: "https://elevenlabs.io",
+          popularity: 81,
+          dateAdded: "2022-01-25",
+        },
+        {
+          id: 18,
+          name: "Replit Ghostwriter",
+          description:
+            "AI coding assistant that helps write, explain, and debug code in various languages.",
+          category: "coding",
+          categoryLabel: "Coding Assistant",
+          categoryColor: "#3B82F6",
+          url: "https://replit.com/ghostwriter",
+          popularity: 76,
+          dateAdded: "2022-10-25",
+        },
+        {
+          id: 19,
+          name: "Firefly",
+          description:
+            "Adobe's AI image generation tool integrated into Creative Cloud applications.",
+          category: "image",
+          categoryLabel: "Image Generation",
+          categoryColor: "#8B5CF6",
+          url: "https://www.adobe.com/products/firefly.html",
+          popularity: 84,
+          dateAdded: "2023-03-21",
+        },
+        {
+          id: 20,
+          name: "Descript",
+          description:
+            "AI-powered audio and video editor that allows editing media as easily as text.",
+          category: "video",
+          categoryLabel: "Video Creation",
+          categoryColor: "#F59E0B",
+          url: "https://www.descript.com",
+          popularity: 78,
+          dateAdded: "2020-11-17",
+        },
+        {
+          id: 21,
+          name: "Coda AI",
+          description:
+            "AI assistant integrated into Coda that helps create documents, analyze data, and automate workflows.",
+          category: "productivity",
+          categoryLabel: "Productivity",
+          categoryColor: "#EC4899",
+          url: "https://coda.io/product/ai",
+          popularity: 75,
+          dateAdded: "2023-05-10",
+        },
+        {
+          id: 22,
+          name: "Tabnine",
+          description:
+            "AI code completion tool that predicts and suggests code based on context and patterns.",
+          category: "coding",
+          categoryLabel: "Coding Assistant",
+          categoryColor: "#3B82F6",
+          url: "https://www.tabnine.com",
+          popularity: 74,
+          dateAdded: "2019-02-28",
+        },
+        {
+          id: 23,
+          name: "Consensus",
+          description:
+            "AI-powered search engine for scientific papers that provides evidence-based answers.",
+          category: "research",
+          categoryLabel: "Research",
+          categoryColor: "#14B8A6",
+          url: "https://consensus.app",
+          popularity: 73,
+          dateAdded: "2022-06-14",
+        },
+        {
+          id: 24,
+          name: "Suno",
+          description:
+            "AI music generation platform that creates original songs from text descriptions.",
+          category: "audio",
+          categoryLabel: "Audio Processing",
+          categoryColor: "#10B981",
+          url: "https://suno.ai",
+          popularity: 80,
+          dateAdded: "2023-12-15",
+        },
+      ];
+    </script>
+
+    <script id="tools-rendering">
+      document.addEventListener("DOMContentLoaded", function () {
+        const toolsGrid = document.getElementById("tools-grid");
+        const searchInput = document.getElementById("search-input");
+        const categoryFilters = document.querySelectorAll(".category-badge");
+        const sortSelect = document.getElementById("sort-select");
+        const loadMoreButton = document.getElementById("load-more");
+        const resultsCount = document.getElementById("results-count");
+        const noResults = document.getElementById("no-results");
+        const loading = document.getElementById("loading");
+
+        let currentCategory = "all";
+        let currentSearchTerm = "";
+        let currentSort = "newest";
+        let currentPage = 1;
+        const itemsPerPage = 12;
+
+        // Initial render
+        renderTools();
+
+        // Event listeners
+        searchInput.addEventListener("input", function () {
+          currentSearchTerm = this.value.toLowerCase();
+          currentPage = 1;
+          renderTools();
+        });
+
+        categoryFilters.forEach((filter) => {
+          filter.addEventListener("click", function () {
+            categoryFilters.forEach((f) => f.classList.remove("active"));
+            this.classList.add("active");
+            currentCategory = this.dataset.category;
+            currentPage = 1;
+            renderTools();
+          });
+        });
+
+        sortSelect.addEventListener("change", function () {
+          currentSort = this.value;
+          currentPage = 1;
+          renderTools();
+        });
+
+        loadMoreButton.addEventListener("click", function () {
+          currentPage++;
+          renderTools(true);
+        });
+
+        function renderTools(append = false) {
+          // Show loading
+          if (!append) {
+            toolsGrid.innerHTML = "";
+            loading.classList.remove("hidden");
+          }
+
+          // Filter tools
+          let filteredTools = toolsData.filter((tool) => {
+            const matchesCategory =
+              currentCategory === "all" || tool.category === currentCategory;
+            const matchesSearch =
+              tool.name.toLowerCase().includes(currentSearchTerm) ||
+              tool.description.toLowerCase().includes(currentSearchTerm);
+            return matchesCategory && matchesSearch;
+          });
+
+          // Sort tools
+          filteredTools = sortTools(filteredTools, currentSort);
+
+          // Update results count
+          resultsCount.textContent = `Showing ${Math.min(
+            filteredTools.length,
+            currentPage * itemsPerPage
+          )} of ${filteredTools.length} tools`;
+
+          // Paginate
+          const paginatedTools = filteredTools.slice(
+            0,
+            currentPage * itemsPerPage
+          );
+
+          // Hide loading after a short delay to simulate loading
+          setTimeout(() => {
+            loading.classList.add("hidden");
+
+            if (filteredTools.length === 0) {
+              noResults.classList.remove("hidden");
+              loadMoreButton.classList.add("hidden");
+            } else {
+              noResults.classList.add("hidden");
+
+              if (!append) {
+                toolsGrid.innerHTML = "";
+              }
+
+              // Render tools
+              paginatedTools
+                .slice((currentPage - 1) * itemsPerPage)
+                .forEach((tool) => {
+                  const card = createToolCard(tool);
+                  toolsGrid.appendChild(card);
+                });
+
+              // Show/hide load more button
+              if (paginatedTools.length < filteredTools.length) {
+                loadMoreButton.classList.remove("hidden");
+              } else {
+                loadMoreButton.classList.add("hidden");
+              }
+            }
+          }, 300);
+        }
+
+        function createToolCard(tool) {
+          const card = document.createElement("div");
+          card.className =
+            "card bg-white rounded shadow-sm overflow-hidden flex flex-col h-full";
+
+          card.innerHTML = `
+                    <div class="p-5 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-gray-900">${tool.name}</h3>
+                            <span class="px-2 py-1 text-xs !rounded-button text-white" style="background-color: ${tool.categoryColor}">
+                                ${tool.categoryLabel}
+                            </span>
+                        </div>
+                        <p class="text-gray-600 mb-4 flex-grow line-clamp-2">${tool.description}</p>
+                        <a href="${tool.url}" target="_blank" class="inline-flex items-center text-primary hover:text-primary/80 transition-colors">
+                            Visit Tool
+                            <div class="w-4 h-4 flex items-center justify-center ml-1">
+                                <i class="ri-external-link-line"></i>
+                            </div>
+                        </a>
+                    </div>
+                `;
+
+          return card;
+        }
+
+        function sortTools(tools, sortBy) {
+          switch (sortBy) {
+            case "newest":
+              return [...tools].sort(
+                (a, b) => new Date(b.dateAdded) - new Date(a.dateAdded)
+              );
+            case "popular":
+              return [...tools].sort((a, b) => b.popularity - a.popularity);
+            case "name":
+              return [...tools].sort((a, b) => a.name.localeCompare(b.name));
+            default:
+              return tools;
+          }
+        }
+      });
+      // Check for filter in URL (like ?filter=new)
+      document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const filterType = urlParams.get("filter");
+
+        if (filterType === "new") {
+          const now = new Date();
+          const ninetyDaysAgo = new Date();
+          ninetyDaysAgo.setDate(now.getDate() - 90);
+
+          const filteredTools = toolsData.filter((tool) => {
+            return new Date(tool.dateAdded) >= ninetyDaysAgo;
+          });
+
+          toolsGrid.innerHTML = ""; // Clear old tools
+          resultsCount.textContent = `Showing ${filteredTools.length} New AI Releases`;
+
+          filteredTools.forEach(renderToolCard); // Only new ones
+
+          // Optional scroll to results
+          document
+            .getElementById("tools-grid")
+            .scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    </script>
+  </body>
+</html>
