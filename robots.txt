@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://explore-ai-tools.netlify.app/sitemap.xml
