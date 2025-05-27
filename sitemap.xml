@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-domain.com/index.html</loc>
+    <loc>https://explore-ai-tools.netlify.app/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://your-domain.com/ai-tools-directory.html</loc>
+    <loc>https://explore-ai-tools.netlify.app/ai-tools.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://your-domain.com/blog.html</loc>
-    <changefreq=“weekly”></changefreq>
-    <priority>0.8</priority>
+    <loc>https://explore-ai-tools.netlify.app/privacy-policy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://explore-ai-tools.netlify.app/terms-of-service.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://explore-ai-tools.netlify.app/cookie-policy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
   </url>
 </urlset>
