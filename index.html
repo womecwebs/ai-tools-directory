@@ -47,7 +47,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="styles.css" />
+
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>
       tailwind.config = {
@@ -73,7 +77,12 @@
   </head>
   <body class="bg-white">
     <!-- Navigation -->
-    <nav class="w-full bg-white shadow-sm fixed top-0 z-50">
+    <nav
+      class="w-full bg-white shadow-sm fixed top-0 z-50"
+      data-aos="fade-right"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="200"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
@@ -116,22 +125,35 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section pt-32 pb-20 relative">
+    <section class="hero-section pt-32 pb-20 relative" data-aos="fade-up">
       <div
         class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"
       ></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="w-full md:w-3/5 lg:w-1/2">
           <h1
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
             class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
           >
             Discover the Best AI Tools for Every Creator
           </h1>
-          <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl">
+          <p
+            class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
+          >
             Explore the smartest tools for writing, design, voice, and more. We
             curate the most powerful AI tools to supercharge your productivity.
           </p>
-          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <div
+            class="mt-8 flex flex-col sm:flex-row gap-4"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
+          >
             <a
               href="#tools"
               class="bg-primary text-white px-8 py-3 rounded-button text-lg font-medium shadow-lg hover:shadow-xl transition-all whitespace-nowrap"
@@ -143,7 +165,12 @@
               >View Categories</a
             >
           </div>
-          <div class="mt-8 flex items-center">
+          <div
+            class="mt-8 flex items-center"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
+          >
             <div class="flex -space-x-2">
               <img
                 src="https://readdy.ai/api/search-image?query=professional%20young%20woman%20with%20glasses%2C%20headshot%20portrait%2C%20neutral%20background&width=40&height=40&seq=user1&orientation=squarish"
@@ -182,7 +209,11 @@
     </section>
 
     <!-- Search Section -->
-    <section class="py-8 bg-gray-50 sticky top-16 z-40">
+    <section
+      class="py-8 bg-gray-50 sticky top-16 z-40"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <form
           action="ai-tools.html"
@@ -236,7 +267,13 @@
     </section>
 
     <!-- Categories Section -->
-    <section id="categories" class="py-16">
+    <section
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="200"
+      id="categories"
+      class="py-16"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900">Browse by Category</h2>
@@ -354,6 +391,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Tool Card 1 -->
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300"
           >
             <div class="p-6">
@@ -428,6 +467,8 @@
 
           <!-- Tool Card 2 -->
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300"
           >
             <div class="p-6">
@@ -504,6 +545,9 @@
 
           <!-- Tool Card 3 -->
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300"
           >
             <div class="p-6">
@@ -580,6 +624,9 @@
 
           <!-- Tool Card 4 -->
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300"
           >
             <div class="p-6">
@@ -654,6 +701,9 @@
 
           <!-- Tool Card 5 -->
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300"
           >
             <div class="p-6">
@@ -730,6 +780,9 @@
 
           <!-- Tool Card 6 -->
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300"
           >
             <div class="p-6">
@@ -829,6 +882,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 border border-gray-100"
           >
             <div class="relative">
@@ -862,6 +917,8 @@
           </div>
 
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 border border-gray-100"
           >
             <div class="relative">
@@ -895,6 +952,8 @@
           </div>
 
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 border border-gray-100"
           >
             <div class="relative">
@@ -928,6 +987,8 @@
           </div>
 
           <div
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
             class="tool-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 border border-gray-100"
           >
             <div class="relative">
@@ -963,7 +1024,11 @@
       </div>
     </section>
     <!-- Newsletter Section -->
-    <section class="py-16 bg-gradient-to-r from-primary/10 to-secondary/10">
+    <section
+      class="py-16 bg-gradient-to-r from-primary/10 to-secondary/10"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div class="flex flex-col md:flex-row">
@@ -1032,7 +1097,11 @@
     </section>
 
     <!-- About Section -->
-    <section class="#about py-16">
+    <section
+      class="#about py-16"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row gap-12 items-center">
           <div class="lg:w-1/2">
@@ -1143,7 +1212,11 @@
     <!-- Testimonials Section -->
 
     <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+    <section
+      class="py-16 bg-gradient-to-r from-primary to-secondary"
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold text-white">
           Ready to Discover the Perfect AI Tools?
@@ -1352,6 +1425,11 @@
           });
         });
       });
+    </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
