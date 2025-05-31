@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- google indexing -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6VC0D7DP56"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6VC0D7DP56");
+    </script>
+    <!-- meta tags for seo -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midjourney - Create Stunning AI-Generated Videos</title>
+    <meta
+      name="description"
+      content="Learn how to use Midjourney to create stunning AI-generated videos. A powerful tool for creators, marketers, and storytellers."
+    />
+    <!-- cononical tag for no repetition -->
+    <link
+      rel="canonical"
+      href="https://explore-ai-tools.netlify.app/posts/midjourney-ai-video.html"
+    />
+    <!-- open graph tags for facebook etc -->
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Midjourney - Create Stunning AI-Generated Videos"
+    />
+    <meta
+      property="og:description"
+      content="Learn how to use Midjourney to create stunning AI-generated videos. A powerful tool for creators, marketers, and storytellers."
+    />
+    <meta
+      property="og:image"
+      content="https://explore-ai-tools.netlify.app/assets/images/blogs/midjourney/midjourney-video-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://explore-ai-tools.netlify.app/posts/midjourney-ai-video.html"
+    />
+    <meta property="og:site_name" content="Explore AI Tools" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <!-- styles and tailwind -->
+    <link rel="stylesheet" href="/assets/css/blogs.css" />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#3b82f6", secondary: "#6366f1" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- schema for blog -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Midjourney - Create Stunning AI-Generated Videos",
+        "description": "Learn how to use Midjourney to create stunning AI-generated videos. A powerful tool for creators, marketers, and storytellers.",
+        "image": "https://explore-ai-tools.netlify.app/assets/images/blogs/midjourney/midjourney-video-preview.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "WOMEC"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Explore AI Tools",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://explore-ai-tools.netlify.app/assets/icons/favicon-32x32.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://explore-ai-tools.netlify.app/posts/midjourney-ai-video.html"
+        },
+        "datePublished": "2025-05-29",
+        "dateModified": "2025-05-29"
+      }
+    </script>
+
+    <!-- favicons for web -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/icons/site.webmanifest" />
+  </head>
+  <body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-['Pacifico'] text-primary"
+          >AI Toolbox</a
+        >
+        <nav class="hidden md:flex space-x-6">
+          <a
+            href="/index.html"
+            class="text-gray-700 hover:text-primary transition"
+            >Home</a
+          >
+          <a
+            href="/blogs.html"
+            class="text-gray-700 hover:text-primary transition"
+            >Blog</a
+          >
+          <a
+            href="/ai-tools.html"
+            class="text-gray-700 hover:text-primary transition"
+            >Categories</a
+          >
+          <a
+            href="/index.html#about"
+            class="text-gray-700 hover:text-primary transition"
+            >About</a
+          >
+        </nav>
+        <button
+          class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+        >
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+      <article>
+        <header class="mb-8">
+          <div class="flex items-center text-sm text-gray-500 mb-3">
+            <span class="mx-2">•</span>
+            <span>5 min read</span>
+            <span class="mx-2">•</span>
+            <span>AI & Technology</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Midjourney - Create Stunning AI-Generated Video
+          </h1>
+          <div class="flex items-center mb-6">
+            <img
+              src="/assets/images/blogs/shared/womec-logo.png"
+              alt="Author"
+              class="w-12 h-12 rounded-full object-cover object-top"
+            />
+            <div class="ml-3">
+              <p class="font-medium text-gray-900">
+                By WOMEC • Published on May 29, 2025
+              </p>
+              <p class="text-sm text-gray-500">AI Technology platform</p>
+            </div>
+          </div>
+          <!-- <div class="flex space-x-3">
+        <button
+          class="w-10 h-10 flex items-center justify-center bg-blue-500 text-white rounded-full hover:bg-blue-600 transition !rounded-button"
+        >
+          <i class="ri-twitter-x-line"></i>
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center bg-blue-700 text-white rounded-full hover:bg-blue-800 transition !rounded-button"
+        >
+          <i class="ri-facebook-fill"></i>
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full hover:bg-blue-700 transition !rounded-button"
+        >
+          <i class="ri-linkedin-fill"></i>
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full hover:bg-green-600 transition !rounded-button"
+        >
+          <i class="ri-whatsapp-line"></i>
+        </button>
+        <button
+          class="w-10 h-10 flex items-center justify-center bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition !rounded-button"
+        >
+          <i class="ri-link"></i>
+        </button>
+      </div> -->
+        </header>
+
+        <figure class="mb-8">
+          <img
+            src="/assets/images/blogs/midjourney/midjourney-video-preview.jpg"
+            alt="Midjourney video generation interface "
+            loading="lazy"
+            class="w-full h-auto rounded-lg shadow-md object-cover object-top"
+          />
+        </figure>
+
+        <div class="blog-content text-lg text-gray-800">
+          <p>
+            Video creation has always been a time-consuming and resource-heavy
+            process. But now, with the rise of AI-powered tools like
+            <a target="blank_" href="https://www.midjourney.com/"
+              ><strong>Midjourney</strong></a
+            >, creators can generate visually stunning videos with minimal
+            effort. Whether you're a YouTuber, marketer, educator, or content
+            creator, Midjourney gives you the power to bring your ideas to life
+            — instantly.
+          </p>
+          <h2 class="text-2xl md:text-3xl font-bold">What Is Midjourney?</h2>
+
+          <p>
+            Midjourney is an advanced AI visual generation platform known for
+            creating incredibly artistic and realistic images. While its core
+            strength started with images, the technology has expanded to support
+            visual storytelling, scene-building, and animated video sequences
+            generated from prompts.
+          </p>
+
+          <blockquote class="bg-blue-50 px-6 py-4 rounded-lg">
+            "MidJourney is truly amazing at crafting breathtaking, high-quality
+            videos—its AI-powered tools make it effortless to bring even the
+            most imaginative ideas to life with stunning detail, vibrant colors,
+            and smooth animations. Whether you're a professional or a beginner,
+            MidJourney's intuitive design and powerful features help you create
+            visually mesmerizing videos in no time!
+          </blockquote>
+
+          <figure class="my-8">
+            <img
+              loading="lazy"
+              src="/assets/images/blogs/midjourney/midjourney-interface.png"
+              alt="Midjourney video generation interface on a desktop screen"
+              class="w-full h-auto rounded-lg shadow-md object-cover object-top"
+            />
+          </figure>
+
+          <h2 class="text-2xl md:text-3xl font-bold">
+            Key Features of Midjourney
+          </h2>
+
+          <ul class="list-disc pl-6">
+            <li>
+              <strong>Prompt-based creation:</strong> Simply describe what you
+              want, and Midjourney renders it visually.
+            </li>
+            <li>
+              <strong>High-resolution visuals:</strong> Ideal for HD video,
+              cinematic scenes, and thumbnails.
+            </li>
+            <li>
+              <strong>Creative control:</strong> Fine-tune style, color,
+              atmosphere, and composition.
+            </li>
+            <li>
+              <strong>Community & Discord integration:</strong> Join the
+              Midjourney Discord to explore what others are making.
+            </li>
+          </ul>
+
+          <h2 class="text-2xl md:text-3xl font-bold">
+            How to Use Midjourney for AI Video Creation
+          </h2>
+
+          <p>
+            While Midjourney doesn't yet support full animated video output
+            natively, here's how creators are using it in workflows:
+          </p>
+
+          <ol class="list-disc pl-6">
+            <li>
+              Generate a series of image frames with Midjourney (e.g., character
+              turning, different angles)
+            </li>
+            <li>
+              Import the images into video editing tools like Adobe Premiere or
+              CapCut
+            </li>
+            <li>
+              Use AI tools like
+              <a href="https://runwayml.com" target="_blank" rel="noopener"
+                >Runway ML</a
+              >
+              or
+              <a href="https://pika.art" target="_blank" rel="noopener"
+                >Pika Labs</a
+              >
+              to animate or interpolate the images into motion
+            </li>
+            <li>Add voiceover, music, and effects to complete the video</li>
+          </ol>
+          <!-- amazon affiliate marketing  -->
+
+          <div class="amazon-covers">
+            <div class="book-section">
+              <!-- Book Card 1 -->
+              <div class="book-card">
+                <div class="book-title">
+                  Explore the Art of AI with Midjourney
+                </div>
+                <div class="book-description">
+                  Learn how to master AI art, build your own visual portfolio,
+                  and even monetize your creations with the help of
+                  expert-authored Midjourney guides.
+                </div>
+                <a
+                  href="https://amzn.to/4mGXq0u"
+                  class="book-button"
+                  target="_blank"
+                  >Learn How to Create Stunning AI Art Today</a
+                >
+              </div>
+              <!-- Book Card 2(ChatGPT Focused) -->
+              <div class="book-card">
+                <div class="book-title">
+                  ChatGPT and the Rise of Conversational AI
+                </div>
+                <div class="book-description">
+                  Get powerful insights into how ChatGPT and language models are
+                  revolutionizing communication, writing, and business. Discover
+                  Amazon's best books on conversational AI and prompt
+                  engineering.
+                </div>
+                <a
+                  href="https://amzn.to/3Sr9DIP"
+                  class="book-button"
+                  target="_blank"
+                >
+                  Top ChatGPT Books</a
+                >
+              </div>
+              <!-- Book Card 3 -->
+              <div class="book-card">
+                <div class="book-title">
+                  Unlock the Power of Artificial Intelligence
+                </div>
+                <div class="book-description">
+                  Explore top-rated books on AI that reveal how machine
+                  learning, automation, and robotics are transforming
+                  industries. Start your journey into the future of technology
+                  today.
+                </div>
+                <a
+                  href="https://amzn.to/4jo4A6R"
+                  class="book-button"
+                  target="_blank"
+                  >Explore AI Insights</a
+                >
+              </div>
+            </div>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold">
+            Who Should Use Midjourney?
+          </h2>
+
+          <p>Midjourney is great for:</p>
+          <ul class="list-disc pl-6">
+            <li>Content creators & YouTubers</li>
+            <li>Marketers who need eye-catching visuals</li>
+            <li>Writers who want to visualize their stories</li>
+            <li>Designers prototyping UI/UX visuals</li>
+          </ul>
+
+          <h2 class="text-2xl md:text-3xl font-bold">
+            Midjourney vs Other AI Visual Tools
+          </h2>
+
+          <p>
+            Compared to tools like
+            <a href="/posts/dalle-3-ai-image-creator.html">DALL·E 3</a> or
+            Stable Diffusion, Midjourney is known for its artistic, painterly
+            style and ease of use via Discord. It produces stunning images with
+            a dream-like feel that's perfect for storytelling.
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold">Final Thoughts</h2>
+          <p>
+            Midjourney opens the door for creators to turn imagination into
+            visuals without needing advanced design or animation skills. As AI
+            video tools continue to evolve, Midjourney is already helping shape
+            the future of video content — one frame at a time.
+          </p>
+
+          <p>
+            👉
+            <a href="/ai-tools.html" class="text-primary hover:underline"
+              >See more AI tools that boost creativity and productivity</a
+            >
+          </p>
+        </div>
+
+        <div class="border-t border-b border-gray-200 py-8 my-8">
+          <div class="flex flex-col sm:flex-row items-center">
+            <img
+              src="/assets/images/blogs/shared/womec-logo.jpeg"
+              alt="Author"
+              class="w-20 h-20 rounded-full object-cover object-top mb-4 sm:mb-0 sm:mr-6"
+            />
+            <div>
+              <h3 class="text-xl font-bold mb-2">About WOMEC</h3>
+              <p class="text-gray-700 mb-3">
+                WOMEC is your trusted AI knowledge base, delivering expert
+                analysis on AI tools, LLMs, and automation. We also build custom
+                AI agents to streamline workflows, enhance productivity, and
+                drive innovation. Explore the future of AI with us."
+              </p>
+
+              <!-- <div class="flex space-x-3">
+                <a href="#" class="text-primary hover:text-primary-dark">
+                  <i class="ri-twitter-x-line ri-lg"></i>
+                </a>
+                <a href="#" class="text-primary hover:text-primary-dark">
+                  <i class="ri-linkedin-fill ri-lg"></i>
+                </a>
+                <a href="#" class="text-primary hover:text-primary-dark">
+                  <i class="ri-mail-line ri-lg"></i>
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="my-12">
+        <h2 class="text-2xl font-bold mb-6">Related Articles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="/posts/chatgpt-writing-assistant.html" class="block group">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-md transition transform group-hover:-translate-y-1 group-hover:shadow-lg"
+            >
+              <img
+                src=" https://readdy.ai/api/search-image?query=ethical%20considerations%20of%20AI%20writing%2C%20person%20contemplating%20at%20desk%20with%20AI%20interface%2C%20thoughtful%20expression%2C%20professional%20office%20environment%2C%20soft%20lighting%2C%20high%20quality%20photography&width=600&height=400&seq=7&orientation=landscape"
+                alt="AI Tools for Content Marketing"
+                class="w-full h-48 object-cover object-top"
+              />
+              <div class="p-4">
+                <h3
+                  class="text-lg font-bold mb-2 group-hover:text-primary transition"
+                >
+                  ChatGPT: The Ultimate Writing Assistant
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  Transform your writing with OpenAI's ChatGPT. Learn how to
+                  craft compelling content, generate creative ideas, and enhance
+                  your writing workflow.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="/posts/midjourney-ai-video.html" class="block group">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-md transition transform group-hover:-translate-y-1 group-hover:shadow-lg"
+            >
+              <img
+                src="/assets/images/blogs/midjourney/midjourney-interface.png"
+                alt="Ethical Considerations of AI Writing"
+                class="w-full h-48 object-cover object-top"
+              />
+              <div class="p-4">
+                <h3
+                  class="text-lg font-bold mb-2 group-hover:text-primary transition"
+                >
+                  Midjourney: Create Stunning AI-Generated Videos
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  Discover how Midjourney's advanced AI can help you create
+                  professional-quality videos in minutes, perfect for content
+                  creators and marketers.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="/posts/ai-seo-tools-2025.html" class="block group">
+            <div
+              class="bg-white rounded-lg overflow-hidden shadow-md transition transform group-hover:-translate-y-1 group-hover:shadow-lg"
+            >
+              <img
+                src="/assets/images/blogs/ai-seo/ai-seo-tools-2025.jpg"
+                alt="Future of AI Writing"
+                class="w-full h-48 object-cover object-top"
+              />
+              <div class="p-4">
+                <h3
+                  class="text-lg font-bold mb-2 group-hover:text-primary transition"
+                >
+                  Top 10 AI SEO Tools for 2025 to Skyrocket Your Google Rankings
+                </h3>
+                <p class="text-gray-700 text-sm">
+                  SEO isn't just about keywords anymore — it's about
+                  understanding search intent, delivering helpful content, and
+                  doing it faster and smarter than your competitors.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <p class="text-sm italic">
+        This post may contain affiliate links. If you click and purchase, we may
+        earn a small commission at no extra cost to you. As an Amazon Associate,
+        I earn from qualifying purchases. We only recommend tools we genuinely
+        believe in.
+      </p>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <a href="#" class="text-2xl font-['Pacifico'] text-white"
+              >AI Toolbox</a
+            >
+            <p class="mt-4 text-gray-400">
+              Your trusted guide to the best AI tools and resources for
+              professionals and creators.
+            </p>
+            <div class="mt-6 flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700"
+              >
+                <i class="ri-twitter-x-line"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700"
+              >
+                <i class="ri-linkedin-line"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700"
+              >
+                <i class="ri-youtube-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="/index.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Browse Tools</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html#categories"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Categories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Submit a Tool</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/blogs.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/index.html#about"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Categories</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="/ai-tools.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Writing & Content</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Image Generation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html#videocreation"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Video Creation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html#voice"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Voice & Audio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html#productivity"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Productivity</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html#development"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Development</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400">© 2025 AI Toolbox. All rights reserved.</p>
+          <div class="mt-4 md:mt-0 flex space-x-6">
+            <a
+              href="/privacy-policy.html"
+              class="text-gray-400 hover:text-white transition-colors text-sm"
+              >Privacy Policy</a
+            >
+            <a
+              href="/terms-of-service.html"
+              class="text-gray-400 hover:text-white transition-colors text-sm"
+              >Terms of Service</a
+            >
+            <a
+              href="/cookie-policy.html"
+              class="text-gray-400 hover:text-white transition-colors text-sm"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="backToTop"
+      class="back-to-top bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center !rounded-button whitespace-nowrap"
+    >
+      <i class="ri-arrow-up-line ri-lg"></i>
+    </button>
+
+    <script id="backToTopScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add("visible");
+          } else {
+            backToTopButton.classList.remove("visible");
+          }
+        });
+
+        backToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+
+    <script id="mobileMenuScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton =
+          document.querySelector(".ri-menu-line").parentElement;
+        const nav = document.querySelector("nav");
+
+        menuButton.addEventListener("click", function () {
+          if (nav.classList.contains("hidden")) {
+            nav.classList.remove("hidden");
+            nav.classList.add(
+              "flex",
+              "flex-col",
+              "absolute",
+              "top-16",
+              "left-0",
+              "right-0",
+              "bg-white",
+              "shadow-md",
+              "p-4",
+              "z-50"
+            );
+            menuButton.innerHTML = '<i class="ri-close-line ri-lg"></i>';
+          } else {
+            nav.classList.add("hidden");
+            nav.classList.remove(
+              "flex",
+              "flex-col",
+              "absolute",
+              "top-16",
+              "left-0",
+              "right-0",
+              "bg-white",
+              "shadow-md",
+              "p-4",
+              "z-50"
+            );
+            menuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+          }
+        });
+
+        // Close menu when window is resized to desktop size
+        window.addEventListener("resize", function () {
+          if (window.innerWidth >= 768) {
+            nav.classList.remove(
+              "flex",
+              "flex-col",
+              "absolute",
+              "top-16",
+              "left-0",
+              "right-0",
+              "bg-white",
+              "shadow-md",
+              "p-4",
+              "z-50"
+            );
+            nav.classList.add("hidden", "md:flex");
+            menuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
