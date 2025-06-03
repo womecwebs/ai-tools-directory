@@ -9,33 +9,53 @@
 
 <url>
   <loc>https://explore-ai-tools.netlify.app/</loc>
-  <lastmod>2025-05-27T19:25:44+00:00</lastmod>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://explore-ai-tools.netlify.app/ai-tools</loc>
-  <lastmod>2025-05-27T19:25:44+00:00</lastmod>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://explore-ai-tools.netlify.app/blogs</loc>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://explore-ai-tools.netlify.app/ai-tools?filter=new</loc>
-  <lastmod>2025-05-27T19:25:44+00:00</lastmod>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://explore-ai-tools.netlify.app/privacy-policy</loc>
-  <lastmod>2025-05-27T19:25:44+00:00</lastmod>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://explore-ai-tools.netlify.app/terms-of-service</loc>
-  <lastmod>2025-05-27T19:25:44+00:00</lastmod>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://explore-ai-tools.netlify.app/cookie-policy</loc>
-  <lastmod>2025-05-27T19:25:44+00:00</lastmod>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://explore-ai-tools.netlify.app/posts/chatgpt-writing-assistant</loc>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://explore-ai-tools.netlify.app/posts/midjourney-ai-video</loc>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://explore-ai-tools.netlify.app/posts/ai-seo-tools-2025</loc>
+  <lastmod>2025-06-03T05:42:44+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
