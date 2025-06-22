@@ -27,7 +27,23 @@
       content="AI tools, best AI apps, AI tools by category, AI for writing, image generation, coding AI, free AI tools, productivity AI"
     />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://your-domain.com/ai-tools.html" />
+    <!-- open graphs -->
+    <meta
+      property="og:title"
+      content="Explore AI Tools by Category - Best Free & Premium AI Tools"
+    />
+    <meta
+      property="og:description"
+      content="Browse powerful AI tools by category including writing, image generation, video, coding, and more."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aitoolkits.xyz/ai-tools.html" />
+    <meta
+      property="og:image"
+      content="https://aitoolkits.xyz/assets/icons/og-image.png"
+    />
+
+    <link rel="canonical" href="https://aitoolkits.xyz/ai-tools.html" />
 
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>
@@ -51,6 +67,37 @@
         },
       };
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "AI Tools Directory",
+        "description": "Browse AI tools by category including writing, image generation, video, coding, and more.",
+        "url": "https://aitoolkits.xyz/ai-tools.html",
+        "numberOfItems": 24,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "ChatGPT",
+              "applicationCategory": "Text Generation",
+              "description": "Advanced language model that can generate human-like text.",
+              "url": "https://chat.openai.com",
+              "operatingSystem": "All",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "ratingCount": "980"
+              }
+            }
+          }
+          // repeat for other tools...
+        ]
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -87,32 +134,188 @@
   </head>
   <body class="bg-gray-50 min-h-screen">
     <header class="bg-white shadow-sm">
-      <div class="container mx-auto px-4 py-6">
-        <div class="flex items-center justify-between">
-          <h1 class="text-3xl font-bold text-gray-900">AI Tools Directory</h1>
+      <nav
+        class="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-95 shadow-sm"
+      >
+        <div
+          class="container mx-auto px-4 py-3 flex items-center justify-between"
+        >
+          <a href="#" class="text-2xl font-['Pacifico'] text-primary"
+            >AI toolbox</a
+          >
+
+          <!-- Desktop Menu (hidden on mobile) -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="/index.html"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >Home</a
+            >
+
+            <a
+              target="blank_"
+              href="https://amzn.to/4ldG8pZ"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >AI guides</a
+            >
+            <a
+              href="/ai-tools.html"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >Tools</a
+            ><a
+              href="/subniches/students-pages/ai-tools-for-students.html"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >For Students</a
+            >
+
+            <div class="relative group">
+              <button
+                class="font-medium text-gray-800 hover:text-primary transition-colors flex items-center space-x-1"
+              >
+                <a href="/categories.html"><span>Categories</span></a>
+                <svg
+                  class="w-4 h-4 transform group-hover:rotate-180 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+
+              <!-- Dropdown -->
+              <div
+                class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-2 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto"
+              >
+                <a
+                  href="/subniches/students-pages/ai-tools-directory-for-students.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Students ai tools</a
+                >
+                <a
+                  href="/ai-tools.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Writing Tools</a
+                >
+                <a
+                  href="/ai-tools.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Productivity Tools</a
+                >
+                <a
+                  href="/ai-tools.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >voice</a
+                >
+                <a
+                  href="/ai-tools.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >image & video</a
+                >
+                <a
+                  href="/ai-tools.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Design</a
+                ><a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >Youtubers (coming soon)</a
+                ><a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >automation (coming soon)</a
+                >
+                <a
+                  href="/categories/study-aid-tools.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >ecommerce (coming soon)</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="/blogs.html"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >Blogs</a
+            >
+
+            <a
+              href="https://forms.gle/4mdP19cdJfhCcdQV7"
+              class="submit-btn font-medium hover:text-primary transition-colors"
+              >Submit Tool
+            </a>
+          </div>
+
+          <!-- Right Side -->
           <div class="flex items-center space-x-4">
-            <button
-              class="flex items-center gap-2 text-gray-600 hover:text-primary transition-colors"
+            <!-- Search (hidden on mobile) -->
+            <!-- <div class="relative hidden md:block">
+            <input
+              type="text"
+              placeholder="Search ..."
+              class="pl-10 pr-4 py-2 w-64 rounded-full bg-gray-100 focus:ring-2 focus:ring-primary text-sm"
+            />
+            <div
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
             >
-              <div class="w-5 h-5 flex items-center justify-center">
-                <i class="ri-information-line"></i>
-              </div>
-              <span>About</span>
-            </button>
+              <i class="ri-search-line"></i>
+            </div>
+          </div> -->
+
+            <!-- Hamburger -->
             <button
-              class="bg-primary text-white px-4 py-2 !rounded-button flex items-center gap-2 hover:bg-primary/90 transition-colors whitespace-nowrap"
+              id="mobile-menu-button"
+              class="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
             >
-              <div class="w-5 h-5 flex items-center justify-center">
-                <i class="ri-add-line"></i>
-              </div>
-              <!-- <span>Submit Tool</span> -->
+              <i class="ri-menu-line text-xl"></i>
             </button>
           </div>
         </div>
-      </div>
+
+        <!-- Mobile Menu (initially hidden) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+          <div class="px-4 py-3 space-y-3">
+            <a
+              href="/index.html"
+              class="block py-2 font-medium text-gray-800 hover:text-primary transition-colors"
+              >Home</a
+            >
+            <a
+              target="blank_"
+              href="https://amzn.to/4ldG8pZ"
+              class="font-medium text-gray-800 hover:text-primary transition-colors"
+              >AI guides</a
+            >
+            <a
+              href="/ai-tools.html"
+              class="block py-2 font-medium text-gray-800 hover:text-primary transition-colors"
+              >Tools</a
+            ><a
+              href="/categories.html"
+              class="block py-2 font-medium text-gray-800 hover:text-primary transition-colors"
+              >Categories</a
+            >
+            <a
+              href="/blogs.html"
+              class="block py-2 font-medium text-gray-800 hover:text-primary transition-colors"
+              >Blogs</a
+            >
+            <a
+              href="https://forms.gle/4mdP19cdJfhCcdQV7"
+              class="submit-btn block py-2 font-medium hover:text-primary transition-colors"
+              >Submit tool</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-8 just-search">
       <div class="max-w-4xl mx-auto mb-8">
         <div class="relative">
           <div

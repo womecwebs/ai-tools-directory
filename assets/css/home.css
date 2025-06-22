@@ -1,0 +1,206 @@
+:where([class^="ri-"])::before {
+  content: "\f3c2";
+}
+body {
+  font-family: "Poppins", "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+}
+.hero-section {
+  background-image: url("https://readdy.ai/api/search-image?query=modern%20tech%20abstract%20background%20with%20soft%20blue%20and%20mint%20green%20gradients%2C%20clean%20minimal%20design%2C%20light%20color%20scheme%20with%20white%20space%2C%20subtle%20tech%20patterns%2C%20professional%20and%20trustworthy%20appearance%2C%20suitable%20for%20AI%20technology%20website%20hero%20section&width=1920&height=800&seq=hero001&orientation=landscape");
+  background-size: cover;
+  background-position: center;
+}
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.category-button:hover {
+  transform: translateY(-2px);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid #cbd5e1;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+.custom-checkbox.checked {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+}
+.custom-checkbox.checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.custom-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+.custom-switch-track {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e2e8f0;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.custom-switch-thumb {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.custom-switch.active .custom-switch-track {
+  background-color: #4a90e2;
+}
+.custom-switch.active .custom-switch-thumb {
+  transform: translateX(24px);
+}
+
+/* ai tools page */
+
+.submit-btn {
+  background-color: #0056b3;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: white;
+  transition: 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: darkblue;
+}
+
+/* amazon affiliate */
+.amazon-affiliate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.product-card {
+  /* background: #f9fafb; */
+  /* border: 1px solid #e5e7eb; */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  text-align: center;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); */
+  transition: 0.3s ease;
+  max-width: 250px;
+  width: 100%;
+  margin: auto;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+.product-card h3 {
+  font-size: 1rem;
+  color: #1f2937;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.product-card p {
+  padding: 0 1rem;
+}
+
+.buy-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #ff9900;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #e47911;
+}
+.buy-btncontainer {
+  text-align: center;
+}
+.down-btn {
+  background-color: #e47911;
+}
+
+.product-grid.swiper {
+  padding-bottom: 3rem;
+  width: 100%;
+}
+
+.swiper-slide.product-card {
+  width: 85vw; /* Default for mobile */
+  max-width: 300px;
+
+  /* border-radius: 12px; */
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .swiper-slide.product-card {
+    width: 45vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-slide.product-card {
+    width: 30vw;
+  }
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Adjust swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff9900;
+}

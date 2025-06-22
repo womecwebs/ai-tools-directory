@@ -34,7 +34,7 @@
       name="google-site-verification"
       content="iMba3iNH_5vmxhCCOtq8EyrRUqMsPwOKYGRYRoJNIYU"
     />
-    <link rel="canonical" href="https://your-domain.com/" />
+    <link rel="canonical" href="https://aitoolkits.xyz/" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,10 +50,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
 
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>
@@ -77,6 +85,78 @@
         },
       };
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "AI Toolbox",
+        "url": "https://aitoolkits.xyz/",
+        "alternateName": "AI Toolkits",
+        "description": "Explore 100+ free and premium AI tools across writing, image generation, productivity, and more. Discover the best AI software with unbiased reviews and weekly updates.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AI Toolbox",
+          "url": "https://aitoolkits.xyz/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://aitoolkits.xyz/assets/icons/favicon-32x32.png",
+            "width": 180,
+            "height": 180
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://aitoolkits.xyz/ai-tools.html?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Featured AI Tools",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://openai.com/index/chatgpt/",
+            "name": "ChatGPT"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://www.midjourney.com/home",
+            "name": "Midjourney"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://elevenlabs.io/",
+            "name": "ElevenLabs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://pictory.ai/",
+            "name": "Pictory"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://Notion.com/",
+            "name": "Notion"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://www.canva.com/ai-image-generator/",
+            "name": "Canva ai"
+          }
+        ]
+      }
+    </script>
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -99,51 +179,183 @@
   </head>
   <body class="bg-white">
     <!-- Navigation -->
+
     <nav
-      class="w-full bg-white shadow-sm fixed top-0 z-50"
-      data-aos="fade-right"
-      data-aos-easing="ease-in-out"
-      data-aos-delay="200"
+      class="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-95 shadow-sm"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
-          <div class="flex items-center">
-            <a href="#" class="text-2xl font-['Pacifico'] text-primary"
-              >AI Toolbox</a
-            >
-          </div>
-          <div class="hidden md:flex items-center space-x-8">
-            <a href="#" class="text-gray-700 hover:text-primary font-medium"
-              >Home</a
-            >
-            <a
-              href="/ai-tools.html"
-              class="text-gray-700 hover:text-primary font-medium"
-              >Tools</a
-            >
-            <a
-              href="/ai-tools.html"
-              class="text-gray-700 hover:text-primary font-medium"
-              >Categories</a
-            >
-            <a
-              href="#about"
-              class="text-gray-700 hover:text-primary font-medium"
-              >About</a
-            >
-            <a
-              href="/blogs.html"
-              class="text-gray-700 hover:text-primary font-medium"
-              >Blog</a
-            >
-          </div>
-          <div class="flex items-center">
+      <div
+        class="container mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <a href="#" class="text-2xl font-['Pacifico'] text-primary"
+          >AI toolbox</a
+        >
+
+        <!-- Desktop Menu (hidden on mobile) -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="/index.html"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >Home</a
+          >
+
+          <a
+            target="blank_"
+            href="https://amzn.to/4ldG8pZ"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >AI guides</a
+          >
+          <a
+            href="/ai-tools.html"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >Tools</a
+          ><a
+            href="/subniches/students-pages/ai-tools-for-students.html"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >For Students</a
+          >
+
+          <div class="relative group">
             <button
-              class="ml-4 md:hidden flex items-center justify-center w-10 h-10"
+              class="font-medium text-gray-800 hover:text-primary transition-colors flex items-center space-x-1"
             >
-              <i class="ri-menu-line ri-lg"></i>
+              <a href="/categories.html"><span>Categories</span></a>
+              <svg
+                class="w-4 h-4 transform group-hover:rotate-180 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
             </button>
+
+            <!-- Dropdown -->
+            <div
+              class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-2 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto"
+            >
+              <a
+                href="/subniches/students-pages/ai-tools-directory-for-students.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Students ai tools</a
+              >
+              <a
+                href="/ai-tools.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Writing Tools</a
+              >
+              <a
+                href="/ai-tools.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Productivity Tools</a
+              >
+              <a
+                href="/ai-tools.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >voice</a
+              >
+              <a
+                href="/ai-tools.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >image & video</a
+              >
+              <a
+                href="/ai-tools.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Design</a
+              ><a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >Youtubers (coming soon)</a
+              ><a
+                href="#"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >automation (coming soon)</a
+              >
+              <a
+                href="/categories/study-aid-tools.html"
+                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >ecommerce (coming soon)</a
+              >
+            </div>
           </div>
+
+          <a
+            href="/blogs.html"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >Blogs</a
+          >
+
+          <a
+            href="https://forms.gle/4mdP19cdJfhCcdQV7"
+            class="submit-btn font-medium hover:text-primary transition-colors"
+            >Submit Tool
+          </a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex items-center space-x-4">
+          <!-- Search (hidden on mobile) -->
+          <!-- <div class="relative hidden md:block">
+            <input
+              type="text"
+              placeholder="Search ..."
+              class="pl-10 pr-4 py-2 w-64 rounded-full bg-gray-100 focus:ring-2 focus:ring-primary text-sm"
+            />
+            <div
+              class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+            >
+              <i class="ri-search-line"></i>
+            </div>
+          </div> -->
+
+          <!-- Hamburger -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200"
+          >
+            <i class="ri-menu-line text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (initially hidden) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-4 py-3 space-y-3">
+          <a
+            href="/index.html"
+            class="block py-2 font-medium text-gray-800 hover:text-primary transition-colors"
+            >Home</a
+          >
+          <a
+            target="blank_"
+            href="https://amzn.to/4ldG8pZ"
+            class="font-medium text-gray-800 hover:text-primary transition-colors"
+            >AI guides</a
+          >
+          <a
+            href="/ai-tools.html"
+            class="block py-2 font-medium text-gray-800 hover:text-primary transition-colors"
+            >Tools</a
+          ><a
+            href="/categories.html"
+            class="block py-2 font-medium text-gray-800 hover:text-primary transition-colors"
+            >Categories</a
+          >
+          <a
+            href="/blogs.html"
+            class="block py-2 font-medium text-gray-800 hover:text-primary transition-colors"
+            >Blogs</a
+          >
+          <a
+            href="https://forms.gle/4mdP19cdJfhCcdQV7"
+            class="submit-btn block py-2 font-medium hover:text-primary transition-colors"
+            >Submit tool</a
+          >
         </div>
       </div>
     </nav>
@@ -179,12 +391,12 @@
             data-aos-delay="200"
           >
             <a
-              href="#tools"
+              href="/ai-tools.html"
               class="bg-primary text-white px-8 py-3 rounded-button text-lg font-medium shadow-lg hover:shadow-xl transition-all whitespace-nowrap"
               >Browse Tools</a
             >
             <a
-              href="#categories"
+              href="/categories.html"
               class="bg-white text-primary border border-primary px-8 py-3 rounded-button text-lg font-medium hover:bg-gray-50 transition-all whitespace-nowrap"
               >View Categories</a
             >
@@ -366,7 +578,7 @@
 
         <div class="mt-10 text-center">
           <a
-            href="ai-tools.html"
+            href="/categories.html"
             class="text-primary font-medium hover:underline inline-flex items-center"
           >
             View all categories
@@ -407,7 +619,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           <!-- Tool Card 1 -->
           <div
             data-aos="fade-up"
@@ -899,7 +1111,7 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
           <div
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
@@ -1042,7 +1254,8 @@
         </div>
       </div>
     </section>
-    <!-- Newsletter Section -->
+
+    <!-- Cta buttons -->
     <section
       class="py-16 bg-gradient-to-r from-primary/10 to-secondary/10"
       data-aos="fade-up"
@@ -1112,6 +1325,59 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- amazon affiliate -->
+    <section class="section-light amazon affiliate">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-6">
+        AI Books Should Read in 2025
+      </h2>
+      <div class="product-grid swiper myBookSwiper">
+        <div class="swiper-wrapper">
+          <div class="product-card swiper-slide">
+            <img
+              src="https://m.media-amazon.com/images/I/71xJnFfEYvL._SL1500_.jpg"
+              alt="The Art of Prompt Engineering"
+            />
+
+            <a href="https://amzn.to/4e0R3B6" target="_blank" class="buy-btn"
+              >Buy on Amazon</a
+            >
+          </div>
+          <div class="product-card swiper-slide">
+            <img
+              src="https://m.media-amazon.com/images/I/61ws61Te4fL._SL1500_.jpg"
+              alt="AI for Students"
+            />
+
+            <a href="https://amzn.to/4e0DQs2" target="_blank" class="buy-btn"
+              >Buy on Amazon</a
+            >
+          </div>
+          <div class="product-card swiper-slide">
+            <img
+              src="https://m.media-amazon.com/images/I/31jKg-3pdXL._SX342_SY445_PQ29_.jpg"
+              alt="Notion for Students"
+            />
+
+            <a href="https://amzn.to/45qOtCe" target="_blank" class="buy-btn"
+              >Buy on Amazon</a
+            >
+          </div>
+          <div class="product-card swiper-slide">
+            <img
+              src="https://m.media-amazon.com/images/I/81O7qZh+HeL._SL1500_.jpg"
+              alt="Unlock the Power of AI"
+            />
+
+            <a href="https://amzn.to/443jnhE" target="_blank" class="buy-btn"
+              >Buy on Amazon</a
+            >
+          </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
 
@@ -1229,7 +1495,6 @@
         </div>
       </div>
     </section>
-    <!-- Testimonials Section -->
 
     <!-- CTA Section -->
     <section
@@ -1248,12 +1513,12 @@
 
         <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="ai-tools.html"
+            href="/ai-tools.html"
             class="bg-white text-primary px-8 py-3 rounded-button text-lg font-medium shadow-lg hover:shadow-xl transition-all whitespace-nowrap"
             >Browse All Tools</a
           >
           <a
-            href="ai-tools.html"
+            href="/categories.html"
             class="bg-transparent text-white border border-white px-8 py-3 rounded-button text-lg font-medium hover:bg-white/10 transition-all whitespace-nowrap"
             >Categories</a
           >
@@ -1313,35 +1578,35 @@
               </li>
               <li>
                 <a
-                  href="ai-tools.html"
+                  href="/ai-tools.html"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Browse Tools</a
                 >
               </li>
               <li>
                 <a
-                  href="#categories"
+                  href="/categories.html"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Categories</a
                 >
               </li>
               <li>
                 <a
-                  href="ai-tools.html"
+                  href="/submit-tool.html"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Submit a Tool</a
                 >
               </li>
               <li>
                 <a
-                  href="blogs.html"
+                  href="/blogs.html"
                   class="text-gray-400 hover:text-white transition-colors"
-                  >Blog</a
+                  >Blogs</a
                 >
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="/About-page.html"
                   class="text-gray-400 hover:text-white transition-colors"
                   >About Us</a
                 >
@@ -1354,44 +1619,79 @@
             <ul class="space-y-3">
               <li>
                 <a
-                  href="ai-tools.html"
+                  href="/subniches/students-pages/ai-tools-directory-for-students.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >For Students</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ai-tools.html"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Writing & Content</a
                 >
               </li>
               <li>
                 <a
-                  href="ai-tools.html"
+                  href="/ai-tools.html"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Image Generation</a
                 >
               </li>
               <li>
                 <a
-                  href="ai-tools.html#videocreation"
+                  href="/ai-tools.html#videocreation"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Video Creation</a
                 >
               </li>
               <li>
                 <a
-                  href="ai-tools.html#voice"
+                  href="/ai-tools.html#voice"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Voice & Audio</a
                 >
               </li>
               <li>
                 <a
-                  href="ai-tools.html#productivity"
+                  href="/ai-tools.html#productivity"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Productivity</a
                 >
               </li>
               <li>
                 <a
-                  href="ai-tools.html#development"
+                  href="/ai-tools.html#development"
                   class="text-gray-400 hover:text-white transition-colors"
                   >Development</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">About Us</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="/About-page.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >About Us</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/Affiliate-Disclosure.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >affilate disclosure</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="/privacy-policy.html"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >Privacy Policy</a
                 >
               </li>
             </ul>
@@ -1450,6 +1750,30 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const mobileBtn = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const bookSwiper = new Swiper(".myBookSwiper", {
+        slidesPerView: "auto", // Let CSS control how many fit
+        spaceBetween: 16,
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
   </body>
 </html>
