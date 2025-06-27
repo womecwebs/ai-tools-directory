@@ -204,3 +204,31 @@ input[type="number"]::-webkit-outer-spin-button {
 .swiper-button-prev {
   color: #ff9900;
 }
+/* ai tools page */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+}
+.category-badge {
+  transition: all 0.2s;
+}
+.category-badge:hover {
+  filter: brightness(0.95);
+}
+.category-badge.active {
+  background-color: var(--active-color);
+  color: white;
+}

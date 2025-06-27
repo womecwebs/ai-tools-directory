@@ -176,6 +176,9 @@ input[type="number"]::-webkit-outer-spin-button {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
 }
+.table-listings {
+  list-style: decimal;
+}
 .table-content ol li a {
   padding: 0.7rem 0.5rem;
   font-weight: 700;
@@ -209,6 +212,15 @@ input[type="number"]::-webkit-outer-spin-button {
   background-size: cover;
   padding: 2rem;
 }
+.content-head {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 16, 0, 0.8)),
+    url(/assets/images/blogs/content/youtubers-two.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+}
+
 .blog-head > h1 {
   max-width: 60rem;
 }
